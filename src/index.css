@@ -1,0 +1,68 @@
+*{margin:0; padding: 0;}
+
+.header {
+  background-color: black;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#btnLeft {
+  margin: auto auto auto 2rem;
+}
+
+#btnRight {
+  margin: auto 2rem auto auto;
+}
+
+#logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5rem;
+  border: 2px solid yellow;
+  margin: auto;
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.4), 0 0 9px 3px rgba(253, 238, 27, 0.1);
+}
+
+#name {
+  color: #000;
+  -webkit-text-stroke: 2px yellow;
+  font-style: oblique; 
+  margin: auto;
+}
+
+.headerBtn {
+  --green: yellow;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(253, 249, 27, 0.1) 1%, transparent 40%,transparent 60% , rgba(253, 249, 27, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.4), 0 0 9px 3px rgba(253, 238, 27, 0.1);
+  cursor: pointer;
+} 
+.headerBtn:hover {
+  color: #fffd82;
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.6), 0 0 9px 3px rgba(253, 238, 27, 0.2);
+} 
+.headerBtn:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(253, 238, 27, 0.1) 40%,rgba(253, 238, 27, 0.1) 60% , transparent 100%);
+}
+.headerBtn:hover:before {
+  transform: translateX(15em);
+}

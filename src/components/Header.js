@@ -5,23 +5,21 @@ import logo from '../res/img/logo.png'
 
 function Header() {
   return (
-    <div className=''>
-      <div>
-        <div className=''>
-          <Link to="/Contacto">
-            <button className=''>Contacto</button>
-          </Link>
-        </div>
-        <h1 className=''>MMMMM</h1>
-        <div>
-          <img src={logo} alt='Logo' />
-        </div>
-        <h1 className=''>CHANGUCHE'S</h1>
-        <div>
-          <Link to="/Catalogo">
-            <button className=''>Comidas</button>
-          </Link>
-        </div>
+    <div className='header'>
+      <div id='btnLeft'>
+        <Link to="/Contacto">
+          <button className='headerBtn'>Contacto</button>
+        </Link>
+      </div>
+      <h1 id='name'>MMMMM</h1>
+      
+      <img id='logo' src={logo} alt='Logo' />
+    
+      <h1 id='name'>CHANGUCHE'S</h1>
+      <div id='btnRight'>
+        <Link to="/Catalogo">
+          <button className='headerBtn'>Comidas</button>
+        </Link>
       </div>
     </div>
   );
