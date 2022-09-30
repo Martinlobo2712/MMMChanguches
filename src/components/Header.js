@@ -1,5 +1,5 @@
-import '../index.css';
 import React from 'react';
+import '../index.css';
 import {Link} from 'react-router-dom';
 import logo from '../res/img/logo.png'
 
@@ -12,11 +12,11 @@ function Header() {
         </Link>
       </div>
 
-      <h1 id='name'>MMMMM</h1>
+      <h1 className='name left'>MMMMM</h1>
       
       <img id='logo' src={logo} alt='Logo' />
       
-      <h1 id='name'>CHANGUCHE'S</h1>
+      <h1 className='name right'>CHANGUCHE'S</h1>
       
       <div id='btnRight'>
         <Link to="/catalogo">
