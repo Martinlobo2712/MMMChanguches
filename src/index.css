@@ -1,7 +1,7 @@
 *{margin:0; padding: 0;}
 
 .header {
-  background-color: black;
+  background-color: #131313;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -76,7 +76,7 @@
 
 
 .footer {
-  background-color: #000;
+  background-color: #131313;
   height: 10rem;
 }
 
