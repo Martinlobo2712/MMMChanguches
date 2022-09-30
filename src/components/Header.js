@@ -14,8 +14,10 @@ function Header() {
 
       <h1 className='name left'>MMMMM</h1>
       
-      <img id='logo' src={logo} alt='Logo' />
-      
+      <Link id='lg-link'to='/'>
+        <img id='logo' src={logo} alt='Logo' />
+      </Link>
+
       <h1 className='name right'>CHANGUCHE'S</h1>
       
       <div id='btnRight'>
