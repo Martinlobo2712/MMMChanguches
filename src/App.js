@@ -9,7 +9,7 @@ import Catalogo from './components/Catalogo';
 
 function App() {
   return (
-    <div>
+    <div className='app-div'>
       <Header />
       <Routes>
         <Route index element={<Body />} />

@@ -12,7 +12,7 @@ function Header() {
         </Link>
       </div>
 
-      <h1 className='name left'>MMMMM</h1>
+      <h1 className='name left'>MMMM</h1>
       
       <Link id='lg-link'to='/'>
         <img id='logo' src={logo} alt='Logo' />

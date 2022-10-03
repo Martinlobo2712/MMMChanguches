@@ -1,7 +1,8 @@
-*{margin:0; padding: 0;}
+*{margin: 0; padding: 0;}
 
 .header {
   background-color: #131313;
+  width: 100%;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,8 @@
   width: 15rem;
   margin: auto;
   padding: 0;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow: 0.3125rem 0.0625rem 1rem #e3e01a;
 }
 .left {
   text-align: right;
@@ -80,8 +83,16 @@
 
 
 .footer {
+  border-top: 1px solid white;
+  display: flex;
   background-color: #131313;
-  height: 10rem;
+  width: 100%;
+  height: 7rem;
+  align-items: center;
+
+}
+.div-footer{
+  width: 33.3%;
 }
 
 .icons {
@@ -92,18 +103,18 @@
 .wrapper {
   display: inline-flex;
   list-style: none;
-  height: 7.5rem;
   width: 100%;
-  padding-top: 2.5rem;
+  margin: auto;
   font-family: 'Poppins', sans-serif;
   justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
 }
-
 .wrapper .icon {
   position: relative;
   background: #000;
   border-radius: 50%;
-  margin: 0.625rem;
+  margin: 0.625rem ;
   width: 3.125rem;
   height: 3.125rem;
   font-size: 18px;
@@ -121,7 +132,7 @@
   font-size: 0.875rem;
   background: #fff;
   color: #fff;
-  padding: 0.3125rem 0.5rem;
+  padding: 0.3125rem 0.5rem 0 0.5rem;
   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
@@ -139,14 +150,14 @@
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);  
 }
 .wrapper .icon:hover .tag {
-  top: -2.8125rem;
+  top: -2.6rem;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tag {
-  text-shadow: 0 --0.0625rem 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 -0.0625rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .wrapper .facebook:hover,
@@ -172,24 +183,115 @@
 
 .body {
   background-color: #131313;
-  border-bottom: 1px solid white;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+/*------CONTACTO---------*/
+.contacto-body{
+  background-color: #131313;
+  min-height: 90vh;
+  padding-top: 4rem;
+}
+.contacto-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 2rem;
+}
+.email-tel{
+  border: 2px solid yellow;
+  border-radius: 5rem;
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.4), 0 0 9px 3px rgba(253, 238, 27, 0.1);
 }
 
-h1, h2, p {
+/*------------------------*/
+
+/*---------CATALOGO---------------*/
+.catalogo-body{
+  background-color: #131313;
+  min-height: 90vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.item-a{
+  border: 2px solid yellow;
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.4), 0 0 9px 3px rgba(253, 238, 27, 0.1);
+  border-radius: 5rem;
+  width: 70rem;
+  height: 25rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.img-a{
+  width: 50%;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.txt-a{
+  width: 40rem;
+}
+.-h1a{
+  padding: 1rem;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow: 0.3125rem 0.0625rem 1rem #e3e01a;
+  text-decoration: underline;
+}
+.-pa{
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+.item-b{
+  border: 2px solid yellow;
+  box-shadow: inset 0 0 10px rgba(253, 238, 27, 0.4), 0 0 9px 3px rgba(253, 238, 27, 0.1);
+  border-radius: 5rem;
+  width: 70rem;
+  height: 25rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.img-b{
+  width: 50%;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.txt-b{
+  width: 50rem;
+  
+}
+.-h1b{
+  padding: 3rem 4rem 1rem;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow: 0.3125rem 0.0625rem 1rem #e3e01a;
+  text-decoration: underline;
+}
+.-pb{
+  color: white;
+  padding: 0 4rem;
+  font-size: 1.5rem;
+}
+/*---------------------------------*/
+
+
+h1, h2 {
   color: yellow;
 }
 
-h1, h2 {
+.title {
   padding: 1rem;
   text-align: center;
   font-family: 'Brush Script MT', cursive;
   text-shadow: 0.3125rem 0.0625rem 1rem #e3e01a;
+  font-size: 2.5rem;
 }
 
-p {
+.text {
   color: white;
-  padding: 0 15rem;
-  margin-bottom: 2rem;
+  padding: 0 15rem 2rem;
   font-size: 1.5rem;
   text-align: justify;
   text-align-last: center;
@@ -206,4 +308,11 @@ p {
   height: 28rem;
   padding-bottom: 3rem;
   margin: auto;
+}
+
+
+.bottom-fix{
+  width: 70px;
+  height: 70px;
+
 }
