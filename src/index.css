@@ -314,5 +314,8 @@ h1, h2 {
 .bottom-fix{
   width: 70px;
   height: 70px;
+}
 
+li {
+  color: #fff;
 }

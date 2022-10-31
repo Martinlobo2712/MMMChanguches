@@ -4,6 +4,7 @@ import pedYaIcon from '../res/img/pedidosya-icon.png';
 import insIcon from '../res/img/instagram-icon.png';
 import {Link} from 'react-router-dom';
 import React from 'react';
+import SimpsonsQuote from './SimpsonsQuote';
 
 
 function Footer() {
@@ -42,7 +43,7 @@ function Footer() {
           </ul>
         </div>
         <div className='div-footer'>
-          <h1 className='title'> " Frase Random " </h1>
+          <SimpsonsQuote />
         </div>
       </div>
     );
