@@ -23,7 +23,7 @@ const SimpsonsQuote = () => {
     <div>
       <ul>
         {quotes.map(quote => (
-          <li key={quote.id}>{quote.quote}</li>
+          <li className='simpsonsQuote' key={quote.id}>"{quote.quote}" - {quote.character}</li>
         ))}
       </ul>
     </div>
