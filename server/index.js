@@ -12,15 +12,18 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-mongoose
-  .connect(db, { useNewUrlParser: true})
-  .then(() => {
-    console.log(`Database connected @${db}`);
-  })
-  .catch(err => {
-    console.error(`Connection error ${err}`);
-  })
+const main = async () => { 
+  try {
+    await mongoose.connect(db);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+    console.log(`Database connected @${db}`);
+
+    app.listen(port, () => {
+      console.log(`App listening on port ${port}`)
+    });
+  } catch (err) {
+    console.error(`Connection error ${err}`);
+  }
+}
+
+main();
