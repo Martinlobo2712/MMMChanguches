@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 function Body() {
@@ -14,6 +15,9 @@ function Body() {
         <h2 className='title'>LOREM IPSUM</h2>
 
         <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Sem integer vitae justo eget magna fermentum iaculis eu. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Viverra orci sagittis eu volutpat odio facilisis. Fermentum leo vel orci porta non pulvinar neque laoreet. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Pharetra convallis posuere morbi leo. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Ut placerat orci nulla pellentesque dignissim enim sit. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus.vitae semper quis. Pharetra convallis posuere morbi leo. Cras tincid</p>
+        <Link to='/signup'>
+          <button className='headerBtn'>Sign Up</button>
+        </Link>
       </div>
       
     </div>
