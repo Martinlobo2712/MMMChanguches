@@ -24,68 +24,44 @@ const SignUp = () => {
   }
 
   return (
-    <div className=''>
+    <div className='signup-body'>
       <form onSubmit={handleSubmit} className=''>
-        <h1 className=''>NOMBRE</h1>
-        <label
-          htmlFor='name'
-          className=''>
-            NOMBRE
-        </label>
+        <h2 className='h2title'>Nombre</h2>   
         <input 
           onChange={(e) => setFormData({...formData, name: e.target.value})}
           value={formData.name}
           type='text'
           name='name'
-          className=''
+          className='signup-inputs'
         />
 
-        <h1 className=''>APELLIDO</h1>
-        <label
-          htmlFor='surname'
-          className=''>
-            APELLIDO
-        </label>
+        <h2 className='h2title'>Apellido</h2>       
         <input 
           onChange={(e) => setFormData({...formData, surname: e.target.value})}
           value={formData.surname}
           type='text'
           name='surname'
-          className=''
+          className='signup-inputs'
         />
 
-        <h1 className=''>CORREO ELECTRÓNICO</h1>
-        <label
-          htmlFor='email'
-          className=''>
-            CORREO ELECTRÓNICO
-        </label>
+        <h2 className='h2title'>Correo electrónico</h2>     
         <input 
           onChange={(e) => setFormData({...formData, email: e.target.value})}
           value={formData.email}
           type='email'
           name='email'
-          className=''
+          className='signup-inputs'
         />
 
-        <h1 className=''>CONTRASEÑA</h1>
-        <label
-          htmlFor='password'
-          className=''>
-            CONTRASEÑA
-        </label>
+        <h2 className='h2title'>Contraseña</h2>
         <input 
           onChange={(e) => setFormData({...formData, password: e.target.value})}
           value={formData.password}
           type='password'
           name='password'
-          className=''
+          className='signup-inputs'
         />
-        <input 
-          type='submit'
-          name='submit'
-          classname=''
-        />
+        <button className='signbtn'> Enviar</button>
       </form>
     </div>
   );

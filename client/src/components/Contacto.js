@@ -5,12 +5,17 @@ function Contacto() {
   return (
     <div className='contacto-body'>
       <div className='home-sections'>
-        <h1 className='title'>Contacto</h1>
-        <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Sem integer vitae justo eget magna fermentum iaculis eu. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Viverra orci sagittis eu volutpat odio facilisis. Fermentum leo vel orci porta non pulvinar neque laoreet. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Pharetra convallis posuere morbi leo. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Ut placerat orci nulla pellentesque dignissim enim sit. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Sem integer vitae justo eget magna fermentum iaculis eu. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Viverra orci sagittis eu volutpat odio facilisis. Fermentum leo vel orci porta non pulvinar neque laoreet. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Pharetra convallis posuere morbi leo. Cras tincidunt lobortis feugiat vivamus at augue eget arcu. Ut placerat orci nulla pellentesque dignissim enim sit. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus.</p>
+        <form action="">
+          <h2 className='h2title'>Contacto</h2>
+          <input className='contacto-inputs' type="text"  name='Nombre' placeholder='Nombre'></input>
+          <input className='contacto-inputs'type="text" name='Correo' placeholder='Correo'></input>
+          <input className='contacto-inputs'type="text" name='Teléfono' placeholder='Teléfono'></input>
+          <textarea name="mensaje"placeholder="Escriba su mensaje"></textarea>
+          <button className='contactobtn'>Enviar</button>
+        </form>
       </div>
       <div>
         <h2 className='title'>Ubicacion de mmm changuche's</h2>
-
         <div className='map-container'>
           <iframe 
             title="MMM CHANGUCHE'S"
@@ -24,12 +29,11 @@ function Contacto() {
         </div>
       </div>
       <div className='contacto-info'>
-        <div className='email-tel '>
-          <h1 className='title'>LLAMANOS: 1152234768</h1>
-        </div>
-        <div className='email-tel'>
-          <h1 className='title'>EMAIL: MOMOSAMA09@GMAIL.COM</h1>
-        </div>
+        
+          <h1 className='title-contacto'>LLAMANOS: 1152234768</h1>
+        
+          <h1 className='title-contacto'>EMAIL: MOMOSAMA09@GMAIL.COM</h1>
+        
       </div>
     </div>
   );
